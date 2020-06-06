@@ -4,15 +4,14 @@ class ClickityClick extends React.Component {
   constructor() {
     super();
     this.state = {
-      hasBeenClicked: false
+      toggled: false
     };
   }
  
   handleClick = () => {
     this.setState({
       hasBeenClicked: true
-    }, () =>
-    console.log(this.state.hasBeenClicked)) 
+    }, () => console.log(this.state.hasBeenClicked)) // prints true
   }
    
  
